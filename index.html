@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script src="App.js" defer></script>
+    <title>Movie Booking</title>
+  </head>
+  <body>
+    <!-- <div class="popup-container">
+      <div class="popup-card">
+        <div class="card-left">
+          <img src="images/image1.png" alt="" />
+        </div>
+
+        <div class="card-right">
+          <i class="fa-solid fa-xmark cross-mark"></i>
+          <h3 class="popup-title">Black Adam</h3>
+
+          <p><i class="fa-solid fa-star"></i> 7.2/10</p>
+          <p>125 minutes • Action</p>
+          <p class="card-description">In a city where fire, water, land and air residents live together, a fiery young woman and a go-with-the-flow guy will discover something elemental: how much they have in common.</p>
+          <p class="ticket-price">₹250</p>
+          <button class="book-ticket-btn">Book Tickets</button>
+        </div>
+      </div>
+    </div> -->
+
+    <nav>
+      <div id="left">
+        <img src="images/boss-baby-png.png" alt="website logo" />
+        <h1 id="website-name" onclick="fetchAPI()">🅼🅾🆅🅸🅴🆂 🆆🅾🆁🅻🅳</h1>
+      </div>
+      <div id="right">
+        <div class="w-50 input-group">
+          <input
+            type="search"
+            class="form-control rounded search-input"
+            placeholder="Search"
+            aria-label="Search"
+            aria-describedby="search-addon"
+          />
+          <button
+            type="button"
+            class="btn btn-outline-primary search-btn"
+            onclick="searchMovieName()"
+          >
+            search
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <aside>
+        <h2>Genres</h2>
+        <div id="genre-list">
+          <!-- <div onclick="genreSelect()">Action</div> -->
+        </div>
+      </aside>
+
+      <main>
+        <h2>Now Playing</h2>
+        <div id="movie-list">
+          <!-- <div class="movie-card">
+            <div class="movie-image">
+              <img src="images/image1.png" alt="" />
+            </div>
+            <div class="movie-info">
+              <h3 class="movie-title">Avatar: The Way of Water</h3>
+              <div class="movie-footer">
+                <span>EN</span>
+                <span>8.1</span>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </main>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  background-color: #000000;
+}
+#website-name {
+  cursor: pointer;
+  position: relative;
+  margin-left: 20px;
+  color: white;
+}
+/* popupcard */
+.popup-container {
+  position: fixed;
+  display: none;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.78);
+  z-index: 1;
+}
+.popup-card {
+  position: absolute;
+  border: 1px solid black;
+  width: 600px;
+  min-height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  background-color: aliceblue;
+}
+.cross-mark {
+  position: absolute;
+  color: red;
+  right: -40px;
+  top: 10px;
+  cursor: pointer;
+}
+.card-left {
+  width: 34%;
+}
+.card-left img {
+  width: 100%;
+  /* height: 100%; */
+}
+.card-right {
+  padding: 8px;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  flex: 1;
+}
+.card-description {
+  /* flex-wrap: wrap; */
+  text-overflow: ellipsis;
+}
+.card-right button {
+  /* display: inline; */
+  width: 120px;
+}
+
+/* navbar */
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  height: 80px;
+  background-color: #121212;
+  z-index: 1;
+}
+#left {
+  display: flex;
+  flex: 1;
+}
+#left img {
+  height: 100%;
+  margin-left: 10px;
+}
+#left h1 {
+  font-family: "Tilt Prism", cursive;
+  line-height: 80px;
+  font-size: 38px;
+}
+
+#right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-group {
+  height: 50%;
+  z-index: 0;
+}
+
+/* section */
+section {
+  border: 1px solid black;
+  display: flex;
+  height: 100%;
+  background-color: #1F1F1F;
+}
+/* section - genre section */
+aside {
+  position: fixed;
+  margin-top: 80px;
+  height: 100%;
+  width: 160px;
+  padding-top: 20px;
+  text-align: center;
+  background-color: #1F1F1F;
+
+  color: white;
+  border-right: 1px solid black;
+}
+#genre-list {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.genres {
+  cursor: pointer;
+  padding: 2px 0px;
+}
+.genres:hover {
+  color: #f11a7b;
+}
+
+/* section - movie list sesction */
+main {
+  margin-top: 80px;
+  margin-left: 160px;
+  width: 100%;
+  padding: 0px 20px;
+  border-top: 0px;
+  background-color: #000000;
+}
+main h2 {
+  color: white;
+}
+#movie-list {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 10px;
+  row-gap: 30px;
+}
+
+/* movie card */
+.movie-card {
+  height: 340px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 4px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+.movie-card:hover {
+  transform: scale(1.02);
+}
+.movie-image {
+  height: 258px;
+}
+.movie-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: top;
+}
+.movie-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.movie-title {
+  text-align: center;
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+  /* display: block; */
+  overflow: hidden;
+}
+.movie-footer {
+  display: flex;
+  justify-content: space-between;
+}

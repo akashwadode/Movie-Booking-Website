@@ -1,0 +1,61 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input{
+    padding: 4px;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+}
+#left-section{
+}
+#summary{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+#numberOfTickets{
+    margin-bottom: 4px;
+}
+#ticket-row,#fee, #subtotal-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+#subtotal-row{
+    margin-top: 10px;
+}
+
+
+
+
+/* right section */
+#right-section{
+    height: 100%;
+    margin-right: 10px;
+}
+#form{
+    padding: 20px;
+    width: 800px;
+    border: 1px solid black;
+}
+
+#card-name, #card-number, #expiry, #cvv{
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+}
+#right-section button{
+    width: 100%;
+    padding: 10px 0px;
+    color: white;
+    background-color: #0D6EFD;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+

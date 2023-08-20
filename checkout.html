@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="checkoutStyle.css" />
+    <script src="checkoutScript.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section id="left-section">
+        <button onclick="goback()">Back</button>
+        <div id="summary">
+          <h2>Summary</h2>
+          <h3 id="movieName"></h3>
+          <div id="ticket-row">
+            <div>Classic Ticket</div>
+            <div id="price"></div>
+          </div>
+          <div>
+            <label for="numberOfTickets">number of tickets</label>
+            <input type="number" id="numberOfTickets" value="1" onchange="findPrice()">
+          </div>
+          <div id="fee">
+            <div>Convenience Fee (1.75%)</div>
+            <div id="convience-fee"></div>
+          </div>
+         
+          <hr>
+          <div id="subtotal-row">
+            <div>Sub Total</div>
+            <div id="subtotal"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="right-section">
+        <h1>Checkout</h1>
+        <div id="form">
+          <h2>Payment</h2>
+          <div>
+            <label for="fname">First name</label>
+            <input type="text" id="fname" />
+
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" />
+
+            <label for="email">Email</label>
+            <input type="email" placeholder="you@example.com" id="email" />
+          </div>
+          <br />
+          <hr />
+          <div>
+            <input type="radio" name="card" id="credit" checked />
+            <label for="credit">Credit Card</label>
+
+            <input type="radio" name="card" id="debit" />
+            <label for="debit">Debit Card</label>
+
+            <input type="radio" name="card" id="upi" />
+            <label for="upi">Upi</label>
+          </div>
+
+          <br />
+          <label for="card-name">Name of card</label>
+          <input type="text" id="card-name" />
+          <p>Full name as displayed on card</p>
+
+          <label for="card-number">Credit card number</label>
+          <input type="number" id="card-number" />
+
+          <label for="expiry">Expiration</label>
+          <input type="date" id="expiry" />
+
+          <label for="cvv">CVV</label>
+          <input type="numer" id="cvv" />
+
+          <button>Proceed to pay</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
